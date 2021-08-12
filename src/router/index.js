@@ -1,6 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import EditVehicle from "../components/EditVehicle.vue";
+import VehicleItem from "../components/VehicleItem.vue";
+import VehicleList from "../components/VehicleList.vue";
 
 Vue.use(VueRouter);
 
@@ -9,6 +12,21 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: "/edit",
+    name: "Edit",
+    component: EditVehicle,
+  },
+  {
+    path: "/list",
+    name: "List",
+    component: VehicleList,
+  },
+  {
+    path: "/item",
+    name: "item",
+    component: VehicleItem,
   },
   {
     path: "/about",
